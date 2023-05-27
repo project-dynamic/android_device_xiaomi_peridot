@@ -122,6 +122,9 @@ on property:vendor.post_boot.parsed=1
     write /proc/irq/70/smp_affinity_list 2
     write /proc/irq/222/smp_affinity_list 1
 
+    # Configure uclamp
+    write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
+
 on charger
     chown system system /sys/class/backlight/panel0-backlight/brightness
     write /sys/devices/system/cpu/qcom_lpm/parameters/sleep_disabled n
