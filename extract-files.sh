@@ -82,7 +82,10 @@ function blob_fixup() {
             rm -rf "$tmp_dir"
             split --bytes=20M -d "$2" "$2".part
             ;;
-   esac
+        vendor/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc)
+            sed -i "s/\/odm\/bin\//\/vendor\/bin\//g" "${2}"
+            ;;
+    esac
 }
 
 # Initialize the helper
