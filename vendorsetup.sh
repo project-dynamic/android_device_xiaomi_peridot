@@ -38,3 +38,6 @@ git clone https://github.com/peridot-dev/android_vendor_qcom_opensource_vibrator
 
 rm -rf hardware/xiaomi
 git clone https://github.com/peridot-dev/android_hardware_xiaomi hardware/xiaomi
+
+#Miuicamera
+cat vendor/xiaomi/peridot/proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk.part* > vendor/xiaomi/peridot/proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk
