@@ -1,14 +1,14 @@
 [
   {
-    "remote": "gitlab",
-    "repository": "athizz2005/vendor_xiaomi_peridot",
-    "branch": "lineage-21",
+    "remote": "github",
+    "repository": "peridot-dev/proprietary_vendor_xiaomi_peridot",
+    "branch": "fourteen",
     "target_path": "vendor/xiaomi/peridot"
   },
   {
     "remote": "github",
     "repository": "peridot-dev/android_device_xiaomi_peridot-prebuilt",
-    "branch": "lineage-21",
+    "branch": "lineage-21.0",
     "target_path": "device/xiaomi/peridot-prebuilt"
   },
   {
