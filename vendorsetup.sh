@@ -1,6 +1,6 @@
 #Cloning Device Side trees and prebuilt kernel
 git clone https://github.com/peridot-dev/proprietary_vendor_xiaomi_peridot -b fourteen vendor/xiaomi/peridot
-git clone https://github.com/peridot-dev/android_device_xiaomi_peridot-prebuilt -b lineage-21.0 device/xiaomi/peridot-prebuilt
+git clone https://github.com/peridot-dev/android_device_xiaomi_peridot-prebuilt -b lineage-21.0 device/xiaomi/peridot-kernel
 
 #Cloning Device Side Hals
 rm -rf hardware/qcom-caf/common
