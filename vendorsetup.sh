@@ -4,7 +4,7 @@ git clone https://github.com/peridot-dev/android_device_xiaomi_peridot-prebuilt 
 
 #Cloning Device Side Hals
 rm -rf hardware/qcom-caf/common
-git clone https://github.com/peridot-dev/android_hardware_qcom-caf_common hardware/qcom-caf/common
+git clone https://github.com/xiaomi-peridot/hardware_qcom-caf_common -b infinity hardware/qcom-caf/common
 
 rm -rf hardware/qcom-caf/sm8650/audio/agm
 git clone https://github.com/peridot-dev/android_vendor_qcom_opensource_agm -b lineage-21.0-caf-sm8650  hardware/qcom-caf/sm8650/audio/agm
