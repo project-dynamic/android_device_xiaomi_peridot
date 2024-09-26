@@ -78,6 +78,7 @@ ODM_MANIFEST_FILES := $(DEVICE_PATH)/configs/hidl/manifest_odm.xml
 -include device/xiaomi/peridot-miuicamera/BoardConfig.mk
 
 # Kernel
+TARGET_KERNEL_VERSION := 6.1
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_RAMDISK_USE_LZ4 := true
 TARGET_NEEDS_DTBOIMAGE := true
@@ -94,8 +95,8 @@ BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
-    swinfo.fingerprint=peridot:$(LINEAGE_VERSION) \
-    mtdoops.fingerprint=peridot:$(LINEAGE_VERSION)
+    swinfo.fingerprint=peridot:$(INFINITY_VERSION) \
+    mtdoops.fingerprint=peridot:$(INFINITY_VERSION)
 
 BOARD_BOOTCONFIG := \
     androidboot.hardware=qcom \
@@ -135,7 +136,7 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(RAMDISK_MODULES_PATH)/mo
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 
 # Partitions
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/infinity/config/BoardConfigReservedSize.mk
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
@@ -176,7 +177,9 @@ TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/props/odm.prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
+TARGET_SYSTEM_PROP +=  \
+     $(DEVICE_PATH)/props/system.prop
+     $(DEVICE_PATH)/props/phoneinfo.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
 
 # Recovery
