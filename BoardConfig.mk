@@ -78,6 +78,7 @@ ODM_MANIFEST_FILES := $(DEVICE_PATH)/configs/hidl/manifest_odm.xml
 -include device/xiaomi/peridot-miuicamera/BoardConfig.mk
 
 # Kernel
+TARGET_KERNEL_VERSION := 6.1
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_RAMDISK_USE_LZ4 := true
 TARGET_NEEDS_DTBOIMAGE := true
