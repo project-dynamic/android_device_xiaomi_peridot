@@ -46,6 +46,7 @@ function lib_to_package_fixup_vendor_variants() {
 
     case "$1" in
         vendor.qti.diaghal@1.0 | \
+            vendor.qti.hardware.wifidisplaysession@1.0 | \
             vendor.qti.ImsRtpService-V1-ndk | \
             vendor.qti.imsrtpservice@3.0 | \
             vendor.qti.imsrtpservice@3.1)
