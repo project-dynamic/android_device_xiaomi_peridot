@@ -45,7 +45,8 @@ function lib_to_package_fixup_vendor_variants() {
     fi
 
     case "$1" in
-        vendor.qti.imsrtpservice@3.0 | \
+        vendor.qti.ImsRtpService-V1-ndk | \
+            vendor.qti.imsrtpservice@3.0 | \
             vendor.qti.imsrtpservice@3.1)
             echo "$1_vendor"
             ;;
