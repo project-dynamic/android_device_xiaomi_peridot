@@ -1981,11 +1981,11 @@ vendor/lib64/libqesdk_manager.so
 vendor/lib64/libqesdoem_query_sys.so
 vendor/lib64/libqti-qesdk-secure.so
 vendor/lib64/vendor.qti.qesdhal-impl.so
-vendor/lib64/vendor.qti.qesdhal@1.0.so
-vendor/lib64/vendor.qti.qesdhal@1.1.so
-vendor/lib64/vendor.qti.qesdhal@1.2.so
+vendor/lib64/vendor.qti.qesdhal@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.qesdhal@1.1.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.qesdhal@1.2.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.qesdhal@1.3.so
-vendor/lib64/vendor.qti.qesdhalaidl-V2-ndk.so
+vendor/lib64/vendor.qti.qesdhalaidl-V2-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.qesdsys-V3-ndk.so
 vendor/lib64/vendor.qti.qesdsys-V4-ndk.so
 

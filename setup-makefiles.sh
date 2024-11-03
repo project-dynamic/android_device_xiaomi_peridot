@@ -49,7 +49,11 @@ function lib_to_package_fixup_vendor_variants() {
             vendor.qti.hardware.wifidisplaysession@1.0 | \
             vendor.qti.ImsRtpService-V1-ndk | \
             vendor.qti.imsrtpservice@3.0 | \
-            vendor.qti.imsrtpservice@3.1)
+            vendor.qti.imsrtpservice@3.1 | \
+            vendor.qti.qesdhal@1.0 | \
+            vendor.qti.qesdhal@1.1 | \
+            vendor.qti.qesdhal@1.2 | \
+            vendor.qti.qesdhalaidl-V2-ndk)
             echo "$1_vendor"
             ;;
         nearby)
