@@ -54,7 +54,8 @@ function lib_to_package_fixup_vendor_variants() {
             vendor.qti.qesdhal@1.0 | \
             vendor.qti.qesdhal@1.1 | \
             vendor.qti.qesdhal@1.2 | \
-            vendor.qti.qesdhalaidl-V2-ndk)
+            vendor.qti.qesdhalaidl-V2-ndk | \
+            vendor.xiaomi.hardware.displayfeature@1.0)
             echo "$1_vendor"
             ;;
         nearby)
