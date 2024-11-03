@@ -957,7 +957,7 @@ vendor/lib64/libcamxexternalformatutils.so
 vendor/lib64/libcamxfdengine.so
 vendor/lib64/libcamxhwnodecontext.so
 vendor/lib64/libcamxifestriping.so
-vendor/lib64/libcamximageformatutils.so
+vendor/lib64/libcamximageformatutils.so;DISABLE_DEPS
 vendor/lib64/libcamxncsdatafactory.so
 vendor/lib64/libcamxqsatalgo.so
 vendor/lib64/libcamxsettingsmanager.so
