@@ -1433,9 +1433,9 @@ vendor/lib64/libqdcm-algo.so
 vendor/lib64/libqdcm-json-mode-parser.so
 vendor/lib64/libqdcm-mode-parser.so
 vendor/lib64/libqdutils.so
-vendor/lib64/vendor.qti.hardware.display.allocator@1.0.so
-vendor/lib64/vendor.qti.hardware.display.allocator@3.0.so
-vendor/lib64/vendor.qti.hardware.display.allocator@4.0.so
+vendor/lib64/vendor.qti.hardware.display.allocator@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.display.allocator@3.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.display.allocator@4.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # Display SDM
