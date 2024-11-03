@@ -59,7 +59,8 @@ function lib_to_package_fixup_vendor_variants() {
         nearby)
             echo "$1_header"
             ;;
-        libwpa_client)
+        libagmclient | \
+            libwpa_client)
             ;;
         *)
             return 1
