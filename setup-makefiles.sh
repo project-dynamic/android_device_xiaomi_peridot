@@ -60,7 +60,8 @@ function lib_to_package_fixup_vendor_variants() {
             echo "$1_header"
             ;;
         libagmclient | \
-            libwpa_client)
+            libwpa_client | \
+            sqlite3)
             ;;
         *)
             return 1

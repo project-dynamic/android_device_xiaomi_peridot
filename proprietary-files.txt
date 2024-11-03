@@ -3,6 +3,7 @@
 # Current blobs with ELF checks disabled:
 # libcne, libmasc, lowi-server, qms depend on libwpa_client, which is a gnu makefile target
 # libar-pal depends on libagmclient, which is a gnu makefile target
+# com.xiaomi.immunesystem depends on sqlite3
 
 # ACDB
 odm/etc/acdbdata/Fluence/Fluence_acdb_cal.acdb:odm/etc/acdbdata/cliffs_mtp/Fluence_acdb_cal.acdb
@@ -913,7 +914,7 @@ vendor/lib64/com.xiaomi.camhal.submodel.chifrag.so
 vendor/lib64/com.xiaomi.camx.hook.so
 vendor/lib64/com.xiaomi.chi.hook.so
 vendor/lib64/com.xiaomi.drivermqs.so
-vendor/lib64/com.xiaomi.immunesystem.so
+vendor/lib64/com.xiaomi.immunesystem.so;DISABLE_CHECKELF
 vendor/lib64/com.xiaomi.mivi.hook.so
 vendor/lib64/hw/camera.qcom.sm8650.so
 vendor/lib64/hw/camera.qcom.so
