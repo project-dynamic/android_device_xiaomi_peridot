@@ -141,6 +141,15 @@ on property:vendor.post_boot.parsed=1
     copy /dev/cpuset/system-background/cpus /dev/cpuset/restricted/cpus
 
 on property:vendor.post_boot.parsed=1
+    # Setup runtime cpus
+    write /dev/cpuset/audio-app/cpus 1-2
+    write /dev/cpuset/background/cpus 0-1
+    write /dev/cpuset/display/cpus 2-4
+    write /dev/cpuset/foreground/cpus 0-4
+    write /dev/cpuset/system-background/cpus 0-3
+    write /dev/cpuset/top-app/cpus 0-7
+
+on property:vendor.post_boot.parsed=1
     # IRQ Tuning
     # IRQ 70: msm_drm0
     # IRQ 222: kgsl_3d0_irq
