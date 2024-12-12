@@ -156,7 +156,8 @@ $(foreach display_id, 4630947195234848131 4630947033261136259 463094654558005517
 
 # Dolby
 PRODUCT_PACKAGES += \
-    LunarisDolby
+    LunarisDolby \
+    DSPVolumeSynchronizer \
 
 # DRM
 PRODUCT_PACKAGES += \
