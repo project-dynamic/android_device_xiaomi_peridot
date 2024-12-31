@@ -14,8 +14,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
  <!-- Now bar -->
     <dimen name="nowbar_album_art_size">48dp</dimen>
-    <dimen name="nowbar_media_buttons_size">28dp</dimen>
-    <dimen name="nowbar_height">100dp</dimen>
-    <dimen name="nowbar_width">260dp</dimen>
-    <dimen name="nowbar_margin_bottom">120dp</dimen>
+    <dimen name="nowbar_media_buttons_size">15dp</dimen>
+    <dimen name="nowbar_height">72dp</dimen>
+    <dimen name="nowbar_width">220dp</dimen>
+    <dimen name="nowbar_margin_bottom">165dp</dimen>
 </resources>
