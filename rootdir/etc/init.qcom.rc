@@ -463,6 +463,9 @@ on post-fs-data
     # Create the directory used by qrtr-lookup
     mkdir /data/vendor/qrtr 0775 system system
 
+    # Touch
+    chown system system /sys/devices/platform/goodix_ts.0/switch_report_rate
+
 service nqnfcinfo /system/vendor/bin/nqnfcinfo
     class late_start
     group nfc
