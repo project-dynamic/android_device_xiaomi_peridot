@@ -99,7 +99,28 @@
                 android:resource="@drawable/ic_thermal_settings" />
         </activity>
 
-        <!-- Clear Speaker -->
+        <service
+            android:name=".thermal.ThermalService"
+            android:permission="ThermalService">
+        </service>
+
+        <!-- Thermal Profiles tile service -->
+        
+        <service
+            android:name=".thermal.ThermalTileService"
+            android:label="@string/thermal_tile_label"
+            android:icon="@drawable/ic_thermal_tile"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.TOGGLEABLE_TILE"
+                android:value="true" />
+        </service>
+        
+            <!-- Clear Speaker -->
         <activity
             android:name=".speaker.ClearSpeakerActivity" 
             android:label="@string/clear_speaker_title">
