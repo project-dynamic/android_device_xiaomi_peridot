@@ -159,6 +159,10 @@ PRODUCT_PACKAGES += \
     LunarisDolby \
     DSPVolumeSynchronizer \
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    packages/apps/LunarisDolby/privapp-permissions-dolby.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-dolby.xml
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
